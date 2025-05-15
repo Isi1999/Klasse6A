@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Startet den Server auf Render (Port wird automatisch erkannt)
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 200;
 app.listen(port, () => {
   console.log(`Server läuft unter http://localhost:${port}`);
 });
